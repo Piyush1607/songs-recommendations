@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Roboto:300,400,500,700,900&amp;display=swap");
+
+:root{
+    font-size: 16px;
+    --bg-primary:#1c1c1e;
+    --bg-secondary:#141418;
+    --nav-margin:16rem; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background  :#1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+    background :rgb(28, 118, 214);
+}
+
+/* ------------------NAVBAR ------------------------*/
+.topbar{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    flex-direction: column;
+}
+
+.categories{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: white;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0.5;
+    position: fixed;
+    list-style: none;
+    margin-bottom: 10%;
+}
+
+.categories li{
+    text-align: center;
+    padding: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.categories li a{
+    color: red;
+    font-weight: 500;
+    font-size: 1vw;
+    padding: auto;
+    text-decoration: none;
+}
+
+.categories li a:hover,
+.categories li a:active{
+    color: black;
+}
+
+
+.navbar {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    background: rgb(220, 40, 40);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.navbar h3{
+    font-size: 25px;
+    margin: 20px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-item{
+    margin: 20px;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.login{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.sign-up{
+    color:white ;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+.help{
+    color :white;
+    font-weight: 600;
+}
+
+
+/* ------------------------------------ */
+/* ----------MAIN-CONTENT-------------- */
+/* ------------------------------------ */
+
+.content{
+    display: flex;
+    width: 100%;
+    padding-top: 10%;
+    position:absolute;
+}
+
+
+.maincontent{
+    margin-left: 15%;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    height: 100%;
+}
+
+.news-content{
+    background: rgb(226, 225, 225);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    list-style: none;
+    
+}
+
+.title{
+    box-shadow: rgba(99, 99, 99, 0.2)  0px 2px 8px 0px;
+    width: 100%;
+    border: 0.1px  solid  rgb(209, 209, 209);
+    margin: 10px;
+    margin-left: unset;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.title a{
+    text-decoration: none;
+    color: unset;
+}
+.songs{
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 2%;
+    font-size: 1.2vw;
+    height: auto;
+}
+
+.songs-list{
+    list-style: none;
+    display: flex;
+    width: auto;
+    flex-wrap: wrap ;
+}
+
+.song{
+    margin: 10px;
+    width: 30.33%;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgb(255, 255, 255);
+    border-left: rgb(17, 255, 92) 5px solid;
+}
+
+.song-img{
+    width :7em;
+    margin: 0.5rem;
+}
+.song a{
+    text-decoration: none;
+    color: black;
+    margin: 0.5rem;
+    align-self: center;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 810px){
+    .content{
+        padding-top: 30%;
+    }
+    
+    .navbar{
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .navbar h3{
+        font-size: 15px;
+    }
+    .song{
+        width: 100%;
+        font-size: 12px;
+    }
+    .login{
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+        font-weight: 600;
+        border-radius: 20px;
+    }
+    
+    .sign-up{
+        color:white ;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-weight: 600;
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+
+    .title{
+        font-size: 13px;
+    }
+    .nav-item{
+        width: auto;
+        margin: 10px;
+    }
+
+    .toplist{
+        width: 20%;
+        flex-direction: column;
+    }
+    .toplist li a{
+        /* display: none; */
+        font-size: 10px;
+    }
+    .toplist li{
+        padding:6px;
+    }
+    .maincontent{
+        flex-direction: row;
+    }
+    .news{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .content{
+        padding-top: 20vh;
+    }
+    .navbar{
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .navbar h3{
+        font-size: 12px;
+    }
+}
